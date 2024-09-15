@@ -19,15 +19,3 @@ class BestSellerListView extends StatelessWidget {
     );
   }
 }
-
-
-//  ListView.builder(
-//         physics: const NeverScrollableScrollPhysics(),
-//         padding: EdgeInsets.zero,
-//         itemCount: 10,
-//         itemBuilder: (context, index) {
-//           return const Padding(
-//             padding: EdgeInsets.symmetric(vertical: 10),
-//             child: BestSellerListViewItem(),
-//           );
-//         });
