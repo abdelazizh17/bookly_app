@@ -1,3 +1,4 @@
+import 'package:bookly/Features/home/presentation/views/widgets/book_rating.dart';
 import 'package:bookly/Features/home/presentation/views/widgets/custom_book_details_app_bar.dart';
 import 'package:bookly/Features/home/presentation/views/widgets/custom_book_item.dart';
 import 'package:bookly/constants.dart';
@@ -38,6 +39,9 @@ class BookDetailsViewBody extends StatelessWidget {
               fontStyle: FontStyle.italic,
               color: Colors.white.withOpacity(.7),
             ),
+          ),
+          BookRating(
+            mainAxisAlignment: MainAxisAlignment.center,
           ),
         ],
       ),
