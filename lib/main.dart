@@ -1,7 +1,6 @@
 import 'package:bookly/Features/home/data/repos/home_repo_impl.dart';
 import 'package:bookly/Features/home/presentation/manager/featured_books_cubit/featured_books_cubit.dart';
 import 'package:bookly/constants.dart';
-import 'package:bookly/core/utils/api_service.dart';
 import 'package:bookly/core/utils/app_router.dart';
 import 'package:bookly/core/utils/service_locator.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +20,7 @@ class BooklyApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => FeaturedBooksCubit(
         getit.get<HomeRepoImpl>(),
-      ),
+      )..fetchFeaturedBooks(),
       child: MaterialApp.router(
         routerConfig: AppRouter.router,
         debugShowCheckedModeBanner: false,
